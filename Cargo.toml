@@ -1,0 +1,14 @@
+[package]
+name = "posix-api"
+version = "0.1.0"
+edition = "2021"
+authors = ["Hongyi Chen <3040313336@qq.com>"]
+license = "MIT"
+
+[workspace]
+
+members = ["semaphores"]
+
+[dependencies]
+libc = "0.2.110"
+linkme = "0.3"

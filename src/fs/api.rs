@@ -1,0 +1,9 @@
+pub const F_OK: libc::c_int = 0;
+pub const R_OK: libc::c_int = 4;
+pub const W_OK: libc::c_int = 2;
+pub const X_OK: libc::c_int = 1;
+pub const PROT_READ: libc::c_int = 1;
+pub const PROT_WRITE: libc::c_int = 2;
+pub const PROT_EXEC: libc::c_int = 4;
+pub const MAP_SHARED: libc::c_int = 1;
+pub const MAP_PRIVATE: libc::c_int = 2;

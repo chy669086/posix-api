@@ -1,0 +1,9 @@
+[package]
+name = "semaphores"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+libc = "0.2"
+posix-api = { path = ".." }
+linkme = "0.3"
