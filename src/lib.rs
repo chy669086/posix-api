@@ -2,6 +2,7 @@
 
 pub mod fs;
 pub mod semaphore;
+pub mod task;
 
 use linkme::distributed_slice as def_api_handler;
 /// 用与定义API处理函数的宏
@@ -22,7 +23,7 @@ macro_rules! define_api_handler {
         pub static $name: [fn($($param_name: $param_type),*) -> $return_type];
 
 
-        pub  fn $fn_name($($param_name: $param_type),*) -> $return_type {
+        pub fn $fn_name($($param_name: $param_type),*) -> $return_type {
             let mut iter = $name.iter();
             let Some(handler) = iter.next() else {
                 panic!("No handler found for {}", stringify!($fn_name));
